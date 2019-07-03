@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {background-color: powderblue;}
+      h1   {color: black; font-family: "Courier New", Courier, monospace;}
+      h2  {color: black; font-family:"Georgia";}
+      p {color:red; font-family: "Courier New", Courier, monospace;}
+    </style>
+    <title>Jeremy Yuan | About</title>
+    <link rel = "icon" type = "image/png" href = "imgs/logo.png">
+
+
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- symbol in pages-->
+        <link rel="stylesheet" href="css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/magnific-popup.css"> <!-- for dog gif only -->                 
+        <link rel="stylesheet" href="css/jquery-ui.css">        
+        <link rel="stylesheet" href="css/nice-select.css">              
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css"> 
+        <link rel="stylesheet" href="css/linearicons.css">  
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/slider.js"></script>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Import animations.css-->
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Sidebar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        body {
+          margin: 0;
+          font-family: "Courier New", Courier, monospace;
+        }
+
+        .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #f1f1f1;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 70px;
+        }
+
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.5s;
+        }
+         
+        .sidebar a.active {
+          background-color: #E74C3C;
+          color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          font-size: 36px;
+          margin-left: 500px;
+        }
+
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #111;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+        }
+
+        .openbtn:hover {
+          background-color: #444;
+        }
+
+        div.content {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+      </style>
+  </head>
+  
+  <body>
+
+    <div id = "mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="/">Home</a>
+      <a class = "active" href="about.html">About</a>
+       <a href="projects.html">Projects</a>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button> 
+    </div>   
+    <div class="w3-container w3-animate-top">
+    <div class="row" style="margin-bottom: 0px">
+      <div class="col s12 center-align" style="padding-top: 10px;">         
+        <a href="/"><img class="hoverable" src="imgs/header.jpg" alt="headerlogo" style="width:400px;height:100px"></a>      
+      </div>
+    </div>
+
+    <h1 style="text-align:center; font-weight:bold">About</h1>
+    <p style="text-align:center; font-size: 16px"><q><i>Love yourself for who you are, and trust me, if you are happy from within,<br>you are the most beautiful person, and your smile is your best asset.</i></q> - Ileana D'Cruz</p>
+
+    <div class="slides">
+        <!-- banner -->
+        <section class="banner-area">
+            <div class="container" id="home">
+                <div class="row fullscreen align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-6 banner-left">
+                        <h2>Jeremy Yuan</h2>
+                        <h6> - Student-Athlete</h6>
+                        <h6> - Photography Enthusiast</h6>
+                        <h6> - Gamer</h6>
+                        <h6> - Technology Aficionado</h6>
+                        <h6> - Armchair Baseball Analyst</h6>
+                    </div>
+                    <div class="col-lg-6 col-md-6 banner-right align-self-end" style="padding-bottom: 150px">
+                        <img class="img-fluid" src="imgs/intro.jpg" alt="">
+                    </div>
+                </div>
+            </div>          
+        </section>
+
+        <!-- about -->
+        <div id="about">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-7 home-about-left">
+                        <img class="img-fluid" src="imgs/macbookpro.jpg" alt="">
+                    </div>
+                    <div class="col-lg-5 home-about-right">
+                        <h1 class="text-uppercase"><font color="black">Personal Details</font></h1>
+                        <p>
+                            <font color="black">My name is Jeremy, but a lot of my friends call me Jer. I’m currently 20 years old, and I was born in Atlanta, Georgia. I grew up in Johns Creek, a northwest suburb about a thirty minute drive from the city. <br><br>Throughout middle and high school, I was a dedicated tennis player, practicing an average of 5 hours a day and traveling all throughout the Southeastern states on the weekends. <br><br>
+                            I originally created this website purely as a side project to work on during my free time, but I quickly realized that college didn’t provide me with much free time. From there, my focus for this website shifted to not only a location for me to motivate my learning through sharing and discourse but also to relieve stress by writing down my thoughts.<br><br>
+                            Currently, as of summer 2019, I am working as a back-end developer and a laboratory intern in a tobacco biomarker R&D laboratory at the Centers for Disease Control and Prevention in Atlanta, GA.</font>
+                        </p>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+        <!-- about -->
+        <div id="about2">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5 row-lg-7 home-about-left">
+                        <img class="img-fluid" src="imgs/macbookpro.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 row-lg-5 home-about-right">
+                        <h1 class="text-uppercase"><font color="black">Interests</font></h1>
+                        <p>
+                            <font color="black">Currently, my interests revolve around technology and specifically their role in medicine. Out of all the field of technology, medical tech progresses and advances the slowest, usually due to testing and ethical issues. <br><br>New patient-side advancements like health care mobile apps, remote monitoring, and improved patient-doctor communication as well as doctor-side advancements like big data, robotic surgery, and accelerated experimentation are starting to play a larger and larger role in the treatment of disease as well as improvement of overall public health. Specifically, I am especially interested in accelerated experimentation and software developments to improve patient care in hospitals.<br><br>
+                            Some interesting studies and topics I have read about include:
+                            <ul><li> - Social Network Research involving the transmission of Zika Virus among primates</li><li> - Developing software to automate clinical decisions</li><li> - Burn, dental and craniofacial wound treatment methods for soldiers injured during combat.</li></ul>
+                            </font>
+                        </p>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+      </div>
+
+        <script>
+            slider('.slides');
+        </script>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "200px";
+      document.getElementById("main").style.marginLeft = "200px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>      
+    <script src="js/easing.min.js"></script>      
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script> 
+    <script src="js/jquery.magnific-popup.min.js"></script> 
+    <script src="js/jquery.tabs.min.js"></script>           
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.min-select.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>      
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/simple-skillbar.js"></script>             
+    <script src="js/owl.carousel.min.js"></script>              
+    <script src="js/main.js"></script> 
+  </body>
+</html>
