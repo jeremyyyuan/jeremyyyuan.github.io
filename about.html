@@ -120,6 +120,46 @@
           .sidebar {padding-top: 15px;}
           .sidebar a {font-size: 18px;}
         }
+
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 0px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 30%; /* Full width */
+          height: 90%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+          background-color: white;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 100%;
+          height: 100%;
+        }
+
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
       </style>
   </head>
   
@@ -170,7 +210,7 @@
             <section class="home-about-area section-gap">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-7 home-about-left">
-                        <img class="img-fluid" src="imgs/macbookpro.jpg" alt="">
+                        <img class="img-fluid" src="imgs/personaldetails.jpg" alt="">
                     </div>
                     <div class="col-lg-5 home-about-right">
                         <h1 class="text-uppercase"><font color="black">Personal Details</font></h1>
@@ -189,16 +229,255 @@
         <div class="container">
             <section class="home-about-area section-gap">
                 <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-6 home-about-left">
+                        <h1 class="text-uppercase"><font color="black">Interests</font></h1>
+                        <p style="margin-bottom: -10px">
+                            <font color="black">Currently, my interests revolve around technology and specifically their role in medicine. Out of all the technology fields, medical tech progresses and advances the slowest, usually due to testing and ethical issues. <br><br>New patient-side advancements like health care mobile apps, remote monitoring, and improved patient-doctor communication as well as doctor-side advancements like big data, robotic surgery, and accelerated experimentation are starting to play a larger and larger role in the treatment of disease as well as improvement of overall public health. Specifically, I am especially interested in accelerated experimentation and software developments to improve patient care in hospitals.<br><br>
+                            Some interesting studies and topics I have read about include:
+                            </font>
+                          </p>
+                          <p style="margin-top: 0px">
+                            <font color="black"><ul><li> - Social Network Research involving the transmission of Zika Virus among primates</li><li> - Developing software to automate clinical decisions</li><li> - Burn, dental and craniofacial wound treatment methods for soldiers injured during combat.</li></ul>
+                            </font>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 home-about-right">
+                        <img style="padding-left: 30px" class="img-fluid" src="imgs/medtech.jpg" alt="">
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+      </div>
+      <!-- about -->
+        <div id="about3">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5 row-lg-7 home-about-left">
+                        <img class="img-fluid" src="imgs/school.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 row-lg-5 home-about-right">
+                        <h1 class="text-uppercase"><font color="white">School</font></h1>
+                        <p>
+                            <font color="white">I am a third-year student at the University of Chicago in Chicago, IL. I am pursuing two Bachelor’s degrees in chemistry and computer science.<br><br>Currently, I am a tutor at the Computer Science Instructional Laboratory. Previously, I have volunteered and been a research assistant for the University of Chicago Hospitals.<br><br>
+                            In the future, I would like to attend medical school, possibly pursue other degrees after my third year, and practice as a doctor.<br><br>
+                            Outside of my studies, I play varsity tennis for the University. In my first year, I was chosen as my conference Most-Valuable-Player and Rookie of the Year as well as the Order of the C Rookie of the Year. So far, I am a three-time All-American, 3-time central region champion, and a national champion.
+                            </font>
+                        </p>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+      </div>
+      <!-- about -->
+        <div id="about4">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5 col-md-6 home-about-right">
+                        <h1 class="text-uppercase"><font color="black">Hobbies</font></h1>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px"><font color="black">Gaming:</font></h6>
+                        <p style = "margin-bottom: 0px">
+                          <font color="black">Although my time for games was cut severely in college, I am still an avid fan of games. I recently built my fifth desktop (r/pcmasterrace) and keep up to date with the latest PC hardware news. When I have time, I like to play League of Legends or Counter-Strike Global Offensive with friends and coworkers. On my own time, I like to play competitive Pokemon on pokemonshowdown.com and Maplestory. In the past, I have completed every single Pokemon game in the main franchise at least 5 times and have played Overwatch, Hearthstone, and Fortnite. My favorite single player games are the Witcher series, Persona 5, Zelda: Breath of the Wild, Kirby and the Amazing Mirror, osu!, and Tomb Raider.
+                          </font>
+                        </p>
+
+                        <!-- Trigger/Open The Modal -->
+                        <button style="margin-bottom:10px" id="myBtn">Gaming PC Specifications</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px">PC Specs:</h6>
+                            <p> <font color = "black">
+                              - Intel i7-8700 Coffee Lake 6-Core 3.2 GHz Processor<br>
+                              - ASUS ROG Strix Z370-E Gaming Motherboard <br>
+                              - EVGA Geforce GTX 1080 Graphics Processor <br>
+                              - Corsair Vengeance LPX 16GB (2 x 8GB) 288-Pin DDR4 3000 RAM<br>
+                              - Intel Optane Memory Module 32GB<br>
+                              - Seagate 2TB BarraCuda SATA 6GB/s 7200 RPM 64MB Cache Harddrive<br>
+                              - Corsair CX Series 750 Watt Power Supply<br>
+                              - Corsair Hydro Series H60 AIO Liquid CPU Cooler<br>
+                              - Corsair Carbide Series Clear 400C White Steel ATX Mid-Tower Case<br>
+                            </font>
+                            </p>
+                          </div>
+
+                        </div>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px"><font color="black">Skatboarding:</font></h6>
+                        <p>
+                          <font color = "black">I didn’t know anything about skateboarding until I came to college. My two roommates, both from San Diego, showed me how to skateboard. They took me down a downhill parking garage on campus, so if you didn’t know how to skate, you would fall down hard. After wiping out twice, I learned how to skate. Currently, I own ten board from an assortment of brands, my favorite being Goldcoast, Landyachtz, Penny Australia, and Real Skateboards.
+                          </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px"><font color="black">Baseball:</font></h6>
+                        <p>
+                          <font color = "black">I am a huge Atlanta Braves and Chicago White Sox fan. I always believed it was appropriate to be a fan of one NL team and one AL team at the same time. My father enjoyed watching the star-studded Braves lineup in the 1990’s and that led to my childhood room being filled with posters of Greg Maddux, Tom Glavine, and John Smoltz. Although I am a Braves and White Sox fan, I am a fan of the game in general and my dream is to visit every single MLB stadium in the nation. I own jerseys of many of the players I like or liked to watch, including Tim Lincecum, Shohei Ohtani, and Chipper Jones.
+                          </font>
+                        </p>
+                      </div>
+                      <div class="col-lg-7 col-md-8 home-about-left">
+                        <img class="img-fluid" src="imgs/hobbies.jpg" alt="">
+                    </div>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+      </div>
+      <!-- about -->
+        <div id="about5">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 row-lg-7 home-about-left">
                         <img class="img-fluid" src="imgs/macbookpro.jpg" alt="">
                     </div>
                     <div class="col-md-7 row-lg-5 home-about-right">
-                        <h1 class="text-uppercase"><font color="black">Interests</font></h1>
+                        <h1 class="text-uppercase"><font color="black">Music</font></h1>
                         <p>
-                            <font color="black">Currently, my interests revolve around technology and specifically their role in medicine. Out of all the field of technology, medical tech progresses and advances the slowest, usually due to testing and ethical issues. <br><br>New patient-side advancements like health care mobile apps, remote monitoring, and improved patient-doctor communication as well as doctor-side advancements like big data, robotic surgery, and accelerated experimentation are starting to play a larger and larger role in the treatment of disease as well as improvement of overall public health. Specifically, I am especially interested in accelerated experimentation and software developments to improve patient care in hospitals.<br><br>
-                            Some interesting studies and topics I have read about include:
-                            <ul><li> - Social Network Research involving the transmission of Zika Virus among primates</li><li> - Developing software to automate clinical decisions</li><li> - Burn, dental and craniofacial wound treatment methods for soldiers injured during combat.</li></ul>
+                            <font color="black">I have a very wide variety of musical tastes; I will generally listen to anything except for RnB music. Some of favorite artists in each genre are given below in no particular order.
                             </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">Pop:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - Camila Cabello<br>
+                           - Ava Max<br>
+                           - Bruno Mars<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">Hip-Hop:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - Young Thug<br>
+                           - Lil Uzi Vert<br>
+                           - Logic<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">Country:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - Florida Georgia Line<br>
+                           - Rascal Flatts<br>
+                           - Carrie Underwood<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">EDM:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - Marshmello<br>
+                           - nanobii<br>
+                           - Martin Garrix or Alan Walker<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">Rock:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - The Beatles<br>
+                           - Paramore<br>
+                           - Fleetwood Mac<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">Classical:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - Mussorgsky<br>
+                           - Handel<br>
+                           - Yiruma<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 0px"><font color="black">Korean Pop:</font></h6>
+                        <p style="margin-bottom:5px"><font color="black">
+                           - Girls Generation<br>
+                           - Buzz<br>
+                           - Super Junior<br>
+                        </font>
+                        </p>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+      </div>
+      <!-- about -->
+        <div id="about6">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5 row-lg-7 home-about-left">
+                        <img class="img-fluid" src="imgs/macbookpro.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 row-lg-5 home-about-right">
+                        <h1 class="text-uppercase"><font color="black">Food and Drink:</font></h1>
+                        <p>
+                          <font color="black">At the beginning of my second year of college, I became lactose intolerant, which cut the number of foods I could eat and enjoy by half. <br>
+                          I’m a picky eater, but I am always ready to try out new restaurants or types of food.
+                          </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px"><font color="black">Food:</font></h6>
+                        <p>
+                        <font color = "black">
+                        - All types of rice<br>
+                        - Hand-pulled soup noodles<br>
+                        - Potstickers<br>
+                        - Eggs (sunny-side up, scrambled, or poached only)<br>
+                        - Korean Barbecue<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px"><font color="black">Drinks:</font></h6>
+                        <p>
+                        <font color = "black">
+                        - Coconut Water<br>
+                        - Sweet Tea<br>
+                        </font>
+                        </p>
+                        <h6 style="font-size: 14; font-style: bold; margin-bottom: 5px"><font color="black">Favorite Restaurants:</font></h6>
+                        <p>
+                        <font color = "black">
+                        - Ramen-San (Chicago)<br>
+                        - Osulloc Tea House (Seoul)<br>
+                        - QXY Dumpling House (Chicago)<br>
+                        - Honey Pig (Atlanta)<br>
+                        - Oiistar (Chicago)<br>
+                        - Chipotle<br>
+                        - Breakers Korean Barbecue (Atlanta)<br>
+                        - Sushi Para II (Chicago)<br>
+                        - Hujing (Wuhan)<br>
+                        </font>
+                        </p>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        </div>
+      </div>
+      <!-- about -->
+        <div id="about7">
+        <div class="container">
+            <section class="home-about-area section-gap">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-5 row-lg-7 home-about-left">
+                        <img class="img-fluid" src="imgs/macbookpro.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 row-lg-5 home-about-right">
+                        <h1 class="text-uppercase"><font color="black">Television/Movies:</font></h1>
+                        <p style="margin-bottom: 5px">
+                            <font color="black">I don’t enjoy watching movies. I personally hate going to the movie theatre and would much rather watch a movie at home once it comes out later. I enjoyed watching korean dramas before coming to college, but I am not a huge TV or movie person. <br><br>Some of my favorite shows/dramas/movies are:
+                            </font>
+                        </p>
+                        <p>
+                        <font color = "black">
+                        - Dr. Stranger (Drama)<br>
+                        - Dream High (Drama)<br>
+                        - Descendants of the Sun (Drama)<br>
+                        - Big Bang Theory (TV Show)<br>
+                        - House MD (TV Show)<br>
+                        - Gag Concert (K-TV Show)<br>
+                        - Knowing Brother (K-TV Show)<br>
+                        - Reply 1988 (Drama)<br>
+                        - Interstellar (Movie)<br>
+                        - Spiderman: Homecoming (Movie)<br>
+                        - Deadpool 2 (Movie)<br>
+                        </font>
                         </p>
                     </div>
                 </div>  
@@ -221,22 +500,34 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
     }
+    
     </script>
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>      
-    <script src="js/easing.min.js"></script>      
-    <script src="js/hoverIntent.js"></script>
-    <script src="js/superfish.min.js"></script> 
-    <script src="js/jquery.magnific-popup.min.js"></script> 
-    <script src="js/jquery.tabs.min.js"></script>           
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.min-select.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>      
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/simple-skillbar.js"></script>             
-    <script src="js/owl.carousel.min.js"></script>              
-    <script src="js/main.js"></script> 
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
   </body>
 </html>
