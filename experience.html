@@ -129,22 +129,11 @@
     <div class="w3-container w3-animate-top">
     <div class="row" style="margin-bottom: 0px">
       <div class="col s12 center-align" style="padding-top: 10px;">         
-        <a href="/"><img class="hoverable" src="imgs/header.jpg" alt="headerlogo" style="width:400px;height:100px;"></a>      
+        <a href="/"><img class="hoverable" src="imgs/header.jpg" alt="headerlogo" style="width:400px;height:100px;margin-bottom:-100px"></a>      
       </div>
     </div>
   </div>
 
-    <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "200px";
-      document.getElementById("main").style.marginLeft = "200px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
-    }
-    </script>
         <!-- timeline -->
         <section class="timeline pb-120 section-gap">
             <div class="text-center" id="myTimeline">
@@ -291,7 +280,17 @@
               }
             </script>
 
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "200px";
+      document.getElementById("main").style.marginLeft = "200px";
+    }
 
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>      
