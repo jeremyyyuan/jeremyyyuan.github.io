@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <style>
+    body{
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      background: #f2f2ff;
+    }
+    .sidebar {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #f1f1f1;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 70px;
+        }
+
+        .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.5s;
+        }
+         
+        .sidebar a.active {
+          background-color: #E74C3C;
+          color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          font-size: 36px;
+          margin-left: 500px;
+        }
+
+        .openbtn {
+          font-size: 20px;
+          cursor: pointer;
+          background-color: #111;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+        }
+
+        .openbtn:hover {
+          background-color: #444;
+        }
+
+        div.content {
+          margin-left: 0px;
+          padding: 1px 16px;
+          height: 1000px;
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+          background-color: #f2f2ff;
+        }
+
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+        }
+
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        @media screen and (max-height: 450px) {
+          .sidebar {padding-top: 15px;}
+          .sidebar a {font-size: 18px;}
+        }
+  </style>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        <title>Jeremy Yuan | Experience</title>
+        <link rel = "icon" type = "image/png" href = "imgs/logo.jpg">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- symbol in pages-->
+        <link rel="stylesheet" href="css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/magnific-popup.css"> <!-- for dog gif only -->                 
+        <link rel="stylesheet" href="css/jquery-ui.css">        
+        <link rel="stylesheet" href="css/nice-select.css">              
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css"> 
+        <link rel="stylesheet" href="css/linearicons.css">  
+        <link rel="stylesheet" href="css/main.css">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    </head>
+    <body>
+
+      <div id = "mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a class="active" href="/experience">Experience</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button> 
+    </div>
+
+    <div class="w3-container w3-animate-top">
+    <div class="row" style="margin-bottom: 0px">
+      <div class="col s12 center-align" style="padding-top: 10px;">         
+        <a href="/"><img class="hoverable" src="imgs/header.jpg" alt="headerlogo" style="width:400px;height:100px;"></a>      
+      </div>
+    </div>
+  </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "200px";
+      document.getElementById("main").style.marginLeft = "200px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+        <!-- timeline -->
+        <section class="timeline pb-120 section-gap">
+            <div class="text-center" id="myTimeline">
+                <div class="menu-content pb-70">
+                    <div class="title text-center">
+                        <h1 style="text-align:center; font-weight:bold">Timeline of Experience</h1>
+                        <p style="text-align:center; font-size: 16px"><q><i>The purpose of life is to live it, to taste experience to the utmost,<br>to reach out eagerly and without fear for newer and richer experience.</i></q><br> - Eleanor Roosevelt</p>
+                    </div>
+                </div>
+            </div>        
+                <ul>
+                <h2 class="text-center">2019</h2>
+                <li>
+                    <div class="content">
+                            <img class="img-fluid mx-auto d-block mb-30" src="imgs/northsidehospital.jpg" alt="" style="width:231px;height:80px">
+                    <h4>
+                        <time>Anesthesiology Shadower</time>
+                    </h4>
+                            <p>Northside Hospital</p>
+                            <p>Dr. Jimmy Yao M.D.</p>
+                            <p>Forsyth, GA</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                            <img class="img-fluid mx-auto d-block mb-30" src="imgs/cdc.png" alt="" style="width:292px;height:80px">
+                    <h4>
+                        <time>Laboratory and Data Scientist Fellow</time>
+                    </h4>
+                            <p>Centers for Disease Control and Prevention</p>
+                            <p>Atlanta, GA</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                            <img class="img-fluid mx-auto d-block mb-30" src="imgs/csil.png" alt="" style="width:367px;height:70px">
+                    <h4>
+                        <time>System Admin and Tutor</time>
+                    </h4>
+                            <p>Computer Science Instructional Laboratory</p>
+                            <p>Chicago, IL</p>
+                    </div>
+                </li>
+                <h2 class="text-center">2018</h2>
+                <li>
+                    <div class="content">
+                            <img class="img-fluid mx-auto d-block mb-30" src="imgs/ucmlogo.png" alt="" style="width:232px;height:80px">
+                    <h4>
+                        <time>Clinical Research Assistant</time>
+                    </h4>
+                            <p>UChicago Medicine</p>
+                            <p>Hospitalist Project</p>
+                            <p>Chicago, IL</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <img class="img-fluid mx-auto d-block mb-30" src="imgs/ucmlogo.png" alt="" style="width:232px;height:80px">
+                    <h4>
+                        <time>Emergency Room Volunteer</time>
+                    </h4>
+                    <p>UChicago Emergency Department and Trauma Center</p>
+                    <p>Chicago, IL</p>
+                    </div>
+                </li>
+                <h2 class="text-center">2017</h2>
+                <li>
+                    <div class="content">
+                        <img class="img-fluid mx-auto d-block mb-30" src="imgs/uchicago.jpg" alt="" style="width:100px;height:100px">
+                    <h4>
+                        <time>Started at University of Chicago</time>
+                    </h4>
+                            <p>B.A in Chemistry and Computer Science</p>
+                            <p>Chicago, IL</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <img class="img-fluid mx-auto d-block mb-30" src="imgs/taslogo.png" alt="" style="width:321px;height:100px">
+                    <h4>
+                        <time>Tennis Professional</time>
+                    </h4>
+                            <p>Tennis Academy of the South</p>
+                            <p>Sandy Springs, GA</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <img class="img-fluid mx-auto d-block mb-30" src="imgs/northview.png" alt="" style="width:100px;height:100px">
+                    <h4>
+                        <time>Graduated Northview High School</time>
+                    </h4>
+                            <p>Top 5%</p>
+                            <p>Johns Creek, GA</p>
+                    </div>
+                </li>
+                </ul>
+        </section>  
+
+        <!-- footer -->
+        <footer class="footer-area">
+      <div class="container">
+        <div class="row-foot">
+          <a href="google.com">
+            <img class="circle hoverable2" src="imgs/FFacebook.png" alt="" style="width:30px;height:30px;margin-top:20px; margin-bottom:10px;">
+          </a>
+          <a href="https://github.com/didjunho">
+              <img class="circle hoverable2" src="imgs/FGithub.png" alt="" style="width:30px;height:30px;margin-right:20px;margin-left:20px;margin-bottom:10px;margin-top:20px;">
+          </a>
+          <a href="https://www.instagram.com/didjunho/">
+            <img class="circle hoverable2" src="imgs/FLinkedIn.png" alt="" style="width:34px;height:34px;margin-top:20px;margin-bottom:10px;">
+          </a>
+        </div>
+        <div class="row-foot">                 
+          <div class="col-lg-auto col-md-6">
+            <div class="single-footer-widget">
+              <p>E-mail: jeremy[dot]yuan[at]att.net</p>
+            </div>
+          </div>
+                            
+          <div class="col-lg-auto col-md-6 social-widget">
+            <div class="single-footer-widget">
+                <p>Cell: (404)-483-8608</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto" style="float:right; background:black; top:-40px;">
+        <a class="smoothscroll" title="Back to Top" href="#top">
+          <img class="circle hoverable2" src="imgs/TopScroll.png" alt="" style="width:30px;height:30px">
+        </a>
+      </div>
+    </footer>
+
+            <script>
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "200px";
+                document.getElementById("main").style.marginLeft = "200px";
+              }
+
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+            </script>
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>      
+    <script src="js/easing.min.js"></script>      
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script> 
+    <script src="js/jquery.magnific-popup.min.js"></script> 
+    <script src="js/jquery.tabs.min.js"></script>           
+    <script src="js/jquery.nice-select.min.js"></script>  
+    <script src="js/jquery.min-select.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>      
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/simple-skillbar.js"></script>             
+    <script src="js/owl.carousel.min.js"></script>              
+    <script src="js/main.js"></script>
+    </body>
+</html>

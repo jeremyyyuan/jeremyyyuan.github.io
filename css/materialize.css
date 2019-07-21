@@ -2745,6 +2745,19 @@ a {
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.hoverable2 {
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+}
+
+.hoverable2:hover {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+          box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+
 .divider {
   height: 1px;
   overflow: hidden;
@@ -3518,10 +3531,6 @@ table span.badge {
   margin-right: -0.75rem;
 }
 
-.section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .section.no-pad {
   padding: 0;
